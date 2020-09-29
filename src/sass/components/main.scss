@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after{ box-sizing: border-box; padding:0; margin:0;}
+
+:root{
+    //common for all
+
+    //small
+    @media #{$break-sm}{
+        --font-size: #{$font-size-sm}
+    }
+    
+    //medium
+    @media #{$break-md}{
+        --font-size: #{$font-size-md}
+    }
+    
+    //large
+    @media #{$break-lg}{
+        --font-size: #{$font-size-lg}
+    }
+}
+
+html{
+    height:100%;
+    width:100%;
+    font-size: var(--font-size);
+}
+body{
+    height:100%;
+    width:100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1{
+    margin-bottom:3%;
+}

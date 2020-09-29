@@ -1,0 +1,13 @@
+// Media Queries
+$break-sm: '(max-width: 500px)';
+$break-md: '(min-width: 501px) and (max-width:1000px)';
+$break-lg: '(min-width: 1001px)';
+
+//font sizes
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+
+//sudoku
+$sudoku-cell-border-thin: 2px solid black;
+$sudoku-cell-border-thic: 4px solid black;

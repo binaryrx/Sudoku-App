@@ -1,0 +1,25 @@
+.sudoku{
+    display:grid;
+    grid-template-columns: repeat(9,minmax(2.5rem, 3.5rem));
+    grid-template-rows: repeat(9,minmax(2.5rem, 3.5rem));
+    justify-content: center;
+    
+    &__cell{
+        background-color: var(--sudoku-cell-bg);
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-right: $sudoku-cell-border-thin;
+        border-bottom: $sudoku-cell-border-thin;
+        font-size: 2rem;
+
+        &--border-top{ border-top: $sudoku-cell-border-thic}
+        &--border-right{ border-right: $sudoku-cell-border-thic}
+        &--border-bottom{ border-bottom: $sudoku-cell-border-thic}
+        &--border-left{ border-left: $sudoku-cell-border-thic}
+        
+        &.selected{ background-color:yellow}
+    }
+}
